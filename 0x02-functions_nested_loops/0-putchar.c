@@ -1,19 +1,18 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - prints the string "Holberton" from a character array.
+ * Return: 0 on success.
  */
 int main(void)
 {
-char *sh = "main.h";
+char c[] = "_putchar";
+int i;
 
-while (*sh)
+for (i = 0; i < 9; i++)
 {
-_putchar(*sh);
-sh++;
+_putchar(c[i]);
 }
 _putchar('\n');
-
 return (0);
 }
+
