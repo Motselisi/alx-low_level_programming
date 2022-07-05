@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-char *sh = "Stdio";
+char *sh = "Main";
 
 while (*sh)
 {
