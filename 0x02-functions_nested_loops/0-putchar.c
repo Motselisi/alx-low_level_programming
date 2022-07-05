@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "holberton.h"
 /**
  * main - Entry point
  *
@@ -8,7 +6,7 @@
  */
 int main(void)
 {
-char *sh = "_putchar";
+char *sh = "holberton";
 
 while (*sh)
 {
