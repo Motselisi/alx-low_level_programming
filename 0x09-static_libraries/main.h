@@ -1,5 +1,5 @@
-#ifndef INV_MAIN_H
-#define INV_MAIN_H
+#ifndef _FUNCTIONS_H
+#define _FUNCTIONS_H
 int _putchar(char c);
 int _islower(char c);
 int _isalpha(char c);
