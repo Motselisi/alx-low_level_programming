@@ -1,43 +1,21 @@
-#include "main.h"
-#include <stdio.h>
-
 /**
- * _atoi - Converts String to int
- * @s: string
+ * _atoi - changes a string to an int
+ * @s: the string to be changed
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: the converted int
  */
 int _atoi(char *s)
 {
-int i, j, ten2, neg, found;
-unsigned int ten;
-
-ten = 0;
-i = 1;
-neg = 1;
-found = 0;
-while (s[i] != '\0')
-{
-i++;
-}
-for (j = 0; j < i; j++)
-{
-if ((s[j] >= 48) && (s[j] <= 57))
-{
-ten = ten * 10 + (s[j] - '0');
-found = 1;
-}
-else if (s[j] == 45)
-{
-neg = neg * -1;
-}
-else if (found == 1)
-{
+int i = 1;
+unsigned int num = 0;
+do {
+if (*s == '-')
+i *= -1;
+else if (*s >= '0' && *s <= '9')
+num = num * 10 + (*s - '0');
+else if (num > 0)
 break;
-}
-}
-ten2 = ten * neg;
-return (ten2);
+} while (*s++);
+return (num *i);
 }
 
