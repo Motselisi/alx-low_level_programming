@@ -12,14 +12,10 @@ unsigned int j = 0;
 
 if (s == NULL)
 return (NULL);
-/**
-Get the length of the string.
-*/
+/*Get the length of the string.*/
 while (s[i] != '\0')
 i += 1;
-/**
-+1 to include the terminating character in size.
-*/
+/*+1 to include the terminating character in size.*/
 i++;
 
 dup = malloc(i *sizeof(*dup));
@@ -51,18 +47,14 @@ newdog = malloc(sizeof(struct dog));
 
 if (newdog == NULL)
 return (NULL);
-/**
-Assign name element of new struct to the copy of name.
-*/
+/*Assign name element of new struct to the copy of name.*/
 newdog->name = _strdup(name);
 if (newdog->name == NULL)
 {
 free(newdog);
 return (NULL);
 }
-/**
-Assgin owner element of new struct to the copy of owner.
-*/
+/*Assgin owner element of new struct to the copy of owner.*/
 newdog->owner = _strdup(owner);
 if (newdog->owner == NULL)
 {
